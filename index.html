@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
-    <script src="js/variables.js"></script>
+    <script src="js/operaciones.js"></script>
 </head>
 <body>
    
+    <h1>Formulario Operaciones Aritmeticas</h1>
+
+     <form action="">
+
+        <label for="nUno">Numero Uno</label>
+        <input type="text" name="nUno" id="nUno">
+
+        <br> <br>
+
+        <label for="nDos">Numero Dos</label>
+        <input type="text" name="nDos" id="nDos">
+
+        <br> <br>
+
+        <label for="base">Base</label>
+        <input type="text" name="base" id="base">
+
+        <br> <br>
+
+        <label for="altura">Altura</label>
+        <input type="text" name="altura" id="altura">
+
+        <br> <br>
+
+        <br> <br>
+
+        <label for="radio">Radio</label>
+        <input type="text" name="radio" id="radio">
+
+        <br> <br>
+
+        <button type="button" onclick="sumar()">Sumar</button>
+        <button type="button" onclick="multiplicar()">Multiplicar</button>
+        <button type="button" onclick="triangulo()">Area Triangulo</button>
+        <button type="button" onclick="circulo()">Area Circulo</button>
+
+            <p>Resultado: 
+                <textarea id="resulOperacion" cols="5" rows="1"></textarea>
+            </p>
+
+    </form> 
+
 </body>
 </html>
