@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
-    <script src="js/operaciones.js"></script>
+    <script src="js/decisiones.js"></script>
 </head>
 <body>
    
-    <h1>Formulario Operaciones Aritmeticas</h1>
+    <!--<h1>Formulario Operaciones Aritmeticas</h1>
 
      <form action="">
 
@@ -48,7 +48,41 @@
                 <textarea id="resulOperacion" cols="5" rows="1"></textarea>
             </p>
 
-    </form> 
+    </form>-->
+
+    <h1>Ejemplos Estructurados De Decision</h1>
+        <section>
+
+            <h2>If Simple Y Compuesto</h2>
+            <form>
+
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad">
+                <br><br>
+                <button type="button" onclick="mostrarMensaje()">Mostrar</button>
+
+            </form>
+
+        </section>
+        <br><hr>
+        <section>
+
+            <h2>If Aninado</h2>
+            <form>
+
+                <label for="edadP">Edad</label>
+                <input type="text" name="edadP" id="edadP">
+                <br><br>
+                <label for="estaturaP">Estatura</label>
+                <input type="text" name="estaturaP" id="estaturaP">
+                <br><br>
+                <label for="pesoP">Peso</label>
+                <input type="text" name="pesoP" id="pesoP">
+                <button type="button" onclick="mostrarMensajeDos()">Mostrar</button>
+
+            </form>
+
+        </section>
 
 </body>
 </html>
