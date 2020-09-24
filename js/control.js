@@ -12,7 +12,7 @@
 }
 student() */
 
-let people = () => 
+/* let people = () => 
 {
     let age = 0, paramAge = 0
     let count = -1
@@ -42,4 +42,44 @@ let people = () =>
     console.log(`Cant: ${count} & Total: ${totalAge}`)
 
 } 
-people()   
+people()  */
+
+// ForEach
+
+//Example One
+
+/* let ranks = ['A','B','C']
+
+ranks.forEach(function (e)
+{
+    console.log(e)
+    document.write(e)
+}) */
+
+//Example Two
+
+function Counter() {
+    this.count = 0;
+    let self = this;
+    return {
+        increase: function () {
+            self.count++;
+        },
+        current: function () {
+            return self.count;
+        },
+        reset: function () {
+            self.count = 0;
+        }
+    }
+}
+let counter = new Counter();
+let numbers = [1, 2, 3];
+let sum = 0;
+numbers.forEach(function (e) {
+    sum += e;
+    this.increase()
+}, counter)
+console.log(sum);
+document.write(counter.current());
+//Imprimir en el documento
