@@ -83,3 +83,37 @@ function mostrarMensajeDos()
      }
     alert(mensajeDecision)
 }
+
+function mostrarMensajetres() 
+{
+    let productName = document.getElementById('productName').value   
+    let price = 0
+
+    const PRODUCT_ONE = 'A'
+    const PRODUCT_TWO = 'B'
+    const PRODUCT_THREE = 'C'
+    
+    if (productName == PRODUCT_ONE) 
+    {
+        price = 2000
+    } 
+    else 
+    {
+        if (productName == PRODUCT_TWO) 
+        {
+            price = 2200   
+        } 
+        else 
+        {
+            if (productName == PRODUCT_THREE) 
+            {
+                price = 1800    
+            } 
+            else 
+            {
+                alert('Product invalid')
+            }
+        }
+    }
+    alert(price)
+}
